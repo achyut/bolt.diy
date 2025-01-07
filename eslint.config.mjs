@@ -15,6 +15,7 @@ export default [
   ...blitzPlugin.configs.recommended(),
   {
     rules: {
+      "endOfLine":"off",
       '@blitz/catch-error-name': 'off',
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-empty-object-type': 'off',

@@ -17,7 +17,6 @@ import { renderLogger } from '~/utils/logger';
 import { EditorPanel } from './EditorPanel';
 import { Preview } from './Preview';
 import useViewport from '~/lib/hooks';
-import Cookies from 'js-cookie';
 
 interface WorkspaceProps {
   chatStarted?: boolean;
@@ -168,7 +167,6 @@ export const Workbench = memo(({ chatStarted, isStreaming }: WorkspaceProps) => 
                       <div className="i-ph:terminal" />
                       Toggle Terminal
                     </PanelHeaderButton>
-                    
                     {/* <PanelHeaderButton
                       className="mr-1 text-sm"
                       onClick={() => {

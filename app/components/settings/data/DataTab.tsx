@@ -8,10 +8,7 @@ import { classNames } from '~/utils/classNames';
 import type { Message } from 'ai';
 
 // List of supported providers that can have API keys
-const API_KEY_PROVIDERS = [
-  'Anthropic',
-  'MedtronicGPT',
-] as const;
+const API_KEY_PROVIDERS = ['Anthropic', 'MedtronicGPT'] as const;
 
 interface ApiKeys {
   [key: string]: string;

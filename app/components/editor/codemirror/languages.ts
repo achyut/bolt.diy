@@ -10,7 +10,7 @@ export const supportedLanguages = [
   }),
   LanguageDescription.of({
     name: 'YAML',
-    extensions: ['yaml','yml'],
+    extensions: ['.yaml', '.yml'],
     async load() {
       return import('@codemirror/lang-yaml').then((module) => module.yaml());
     },
@@ -38,7 +38,7 @@ export const supportedLanguages = [
   }),
   LanguageDescription.of({
     name: 'JS',
-    extensions: ['js', 'mjs', 'cjs','gradle'],
+    extensions: ['js', 'mjs', 'cjs', 'gradle'],
     async load() {
       return import('@codemirror/lang-javascript').then((module) => module.javascript());
     },
@@ -87,7 +87,7 @@ export const supportedLanguages = [
   }),
   LanguageDescription.of({
     name: 'JSON',
-    extensions: ['json','avsc'],
+    extensions: ['json', 'avsc'],
     async load() {
       return import('@codemirror/lang-json').then((module) => module.json());
     },

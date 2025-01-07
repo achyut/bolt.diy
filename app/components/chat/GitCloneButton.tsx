@@ -37,7 +37,7 @@ const IGNORE_PATTERNS = [
   '*.ids',
   '*.orig',
   'classes/',
-  'out/'
+  'out/',
 ];
 
 const ig = ignore().add(IGNORE_PATTERNS);

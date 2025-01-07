@@ -1,5 +1,5 @@
 import * as RadixDialog from '@radix-ui/react-dialog';
-import { color, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useState, type ReactElement } from 'react';
 import { classNames } from '~/utils/classNames';
 import { DialogTitle, dialogVariants, dialogBackdropVariants } from '~/components/ui/Dialog';
@@ -92,7 +92,6 @@ export const SettingsWindow = ({ open, onClose }: SettingsProps) => {
                   </button>
                 ))}
                 <div className="mt-auto flex flex-col gap-2">
-                  
                   <a
                     href="#"
                     target="_blank"
