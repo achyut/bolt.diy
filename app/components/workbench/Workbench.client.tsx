@@ -168,7 +168,8 @@ export const Workbench = memo(({ chatStarted, isStreaming }: WorkspaceProps) => 
                       <div className="i-ph:terminal" />
                       Toggle Terminal
                     </PanelHeaderButton>
-                    <PanelHeaderButton
+                    
+                    {/* <PanelHeaderButton
                       className="mr-1 text-sm"
                       onClick={() => {
                         const repoName = prompt(
@@ -201,7 +202,7 @@ export const Workbench = memo(({ chatStarted, isStreaming }: WorkspaceProps) => 
                     >
                       <div className="i-ph:github-logo" />
                       Push to GitHub
-                    </PanelHeaderButton>
+                    </PanelHeaderButton> */}
                   </div>
                 )}
                 <IconButton

@@ -9,6 +9,7 @@ import { LoadingOverlay } from '~/components/ui/LoadingOverlay';
 
 const IGNORE_PATTERNS = [
   'node_modules/**',
+  'target/**',
   '.git/**',
   '.github/**',
   '.vscode/**',
@@ -29,6 +30,14 @@ const IGNORE_PATTERNS = [
   '**/yarn-error.log*',
   '**/*lock.json',
   '**/*lock.yaml',
+  '.idea/',
+  '*.iml',
+  '*.iws',
+  '*.ipr',
+  '*.ids',
+  '*.orig',
+  'classes/',
+  'out/'
 ];
 
 const ig = ignore().add(IGNORE_PATTERNS);

@@ -1,5 +1,5 @@
 import * as RadixDialog from '@radix-ui/react-dialog';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import { useState, type ReactElement } from 'react';
 import { classNames } from '~/utils/classNames';
 import { DialogTitle, dialogVariants, dialogBackdropVariants } from '~/components/ui/Dialog';
@@ -92,23 +92,14 @@ export const SettingsWindow = ({ open, onClose }: SettingsProps) => {
                   </button>
                 ))}
                 <div className="mt-auto flex flex-col gap-2">
+                  
                   <a
-                    href="https://github.com/stackblitz-labs/bolt.diy"
+                    href="#"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={classNames(styles['settings-button'], 'flex items-center gap-2')}
+                    className={classNames(styles['settings-button'], 'items-center gap-2 text-center')}
                   >
-                    <div className="i-ph:github-logo" />
-                    GitHub
-                  </a>
-                  <a
-                    href="https://stackblitz-labs.github.io/bolt.diy/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={classNames(styles['settings-button'], 'flex items-center gap-2')}
-                  >
-                    <div className="i-ph:book" />
-                    Docs
+                    Developed with &hearts; by MECC Team.
                   </a>
                 </div>
               </div>

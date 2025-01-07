@@ -2,6 +2,27 @@ import { LanguageDescription } from '@codemirror/language';
 
 export const supportedLanguages = [
   LanguageDescription.of({
+    name: 'JAVA',
+    extensions: ['java'],
+    async load() {
+      return import('@codemirror/lang-java').then((module) => module.java());
+    },
+  }),
+  LanguageDescription.of({
+    name: 'YAML',
+    extensions: ['yaml','yml'],
+    async load() {
+      return import('@codemirror/lang-yaml').then((module) => module.yaml());
+    },
+  }),
+  LanguageDescription.of({
+    name: 'XML',
+    extensions: ['xml'],
+    async load() {
+      return import('@codemirror/lang-xml').then((module) => module.xml());
+    },
+  }),
+  LanguageDescription.of({
     name: 'VUE',
     extensions: ['vue'],
     async load() {
@@ -17,7 +38,7 @@ export const supportedLanguages = [
   }),
   LanguageDescription.of({
     name: 'JS',
-    extensions: ['js', 'mjs', 'cjs'],
+    extensions: ['js', 'mjs', 'cjs','gradle'],
     async load() {
       return import('@codemirror/lang-javascript').then((module) => module.javascript());
     },
@@ -66,7 +87,7 @@ export const supportedLanguages = [
   }),
   LanguageDescription.of({
     name: 'JSON',
-    extensions: ['json'],
+    extensions: ['json','avsc'],
     async load() {
       return import('@codemirror/lang-json').then((module) => module.json());
     },

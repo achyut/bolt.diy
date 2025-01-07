@@ -10,20 +10,7 @@ import type { Message } from 'ai';
 // List of supported providers that can have API keys
 const API_KEY_PROVIDERS = [
   'Anthropic',
-  'OpenAI',
-  'Google',
-  'Groq',
-  'HuggingFace',
-  'OpenRouter',
-  'Deepseek',
-  'Mistral',
-  'OpenAILike',
-  'Together',
-  'xAI',
-  'Perplexity',
-  'Cohere',
-  'AzureOpenAI',
-  'AmazonBedrock',
+  'MedtronicGPT',
 ] as const;
 
 interface ApiKeys {
